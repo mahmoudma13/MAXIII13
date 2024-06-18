@@ -1,0 +1,127 @@
+@media(max-width:1285px){
+    html{
+        font-size: 55%;
+    }
+
+    .services-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+}
+
+@media(max-width:991px){
+    header{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .education .timeline-items::before{
+        left: 0;
+    }
+
+    .education .timeline-items .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .education .timeline-items .timeline-item:nth-child(odd),
+    .education .timeline-items .timeline-item:nth-child(even){
+        padding-left: 37px;
+        text-align: left;
+       
+    }
+
+    .education .timeline-items .timeline-item .timeline-dot{
+        left: 0;
+    }
+
+    .services{
+        padding-bottom: 7rem;
+    }
+
+
+    .contact form{
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+
+}
+
+@media(max-width:895px){
+    .header i#menu-icon.bx-menu{
+        display: block;
+        font-size: 3.6rem;
+        color: var(--main-color);
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 2rem 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar a{
+        padding: 1rem;
+    }
+
+    .navbar.active{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+
+    .home-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .home-img img{
+        width: 56vw;
+        margin-bottom: 2rem;
+    }
+
+   
+}
+
+@media(max-width:560px){
+    .home .social-icon a{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .home .social-icon a:hover{
+        transform: scale(1.1)translateY(-5px);
+    }
+
+    .heading {
+        font-size: 6rem;
+    }
+}
